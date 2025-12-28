@@ -85,7 +85,7 @@
                   se=TRUE, block.size=npoints^2)
   fit$se <- surf$se.fit
   surf <- surf$fit
-  surf[surf < 0] <- 0
+  # surf[surf < 0] <- 0
   surf[surf > max(fit$fitted.values)] <- max(fit$fitted.values)
   # fit$fitted.values[fit$fitted.values < 0] <- 0
 
