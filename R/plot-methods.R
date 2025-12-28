@@ -170,7 +170,6 @@
       df <- data.frame(X, equalSpace)
 
       vals = rev(cRamp(length(brks) - 1))
-      vals[0] = alpha(vals[0], 0.3)
 
       gp <- f.ggplayout(gp, X, nas, name) +
         geom_point(data=df,
@@ -178,7 +177,7 @@
                    shape=21) +
         scale_fill_manual(name=name, breaks=breaks, labels=breaks,
                             values= vals,
-                            drop=FALSE)
+                            drop=FALSE, na.value = alpha("gray40", 0.3))
 
     } else {
       nas <- is.na(y)
