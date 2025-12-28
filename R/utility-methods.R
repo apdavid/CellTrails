@@ -94,7 +94,8 @@
   if(grayStart) {
     cols <- c("#F2F2F2FF", "#21908CFF", "#FDE725FF")
   } else {
-    cols <- c("#440154FF", "#3B528BFF", "#F2F2F2FF", "#21908CFF", "#5DC863FF", "#FDE725FF")
+    cols <- c("#3B528BFF", "#F2F2F2FF", "#21908CFF", "#FDE725FF")
+    # cols <- c("#3B528BFF", "#F2F2F2FF", "#21908CFF", "#5DC863FF", "#FDE725FF")
   }
   colorRampPalette(cols)(n)
 }
