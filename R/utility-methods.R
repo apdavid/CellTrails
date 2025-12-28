@@ -90,7 +90,7 @@
 #' @importFrom grDevices colorRampPalette
 #' @keywords internal
 #' @author Daniel C. Ellwanger
-.prettyColorRamp <- function(n, grayStart=FALSE) {
+.prettyColorRamp <- function(n, grayStart=TRUE) {
   if(grayStart) {
     cols <- c("#F2F2F2FF", "#21908CFF", "#FDE725FF")
     } else {
