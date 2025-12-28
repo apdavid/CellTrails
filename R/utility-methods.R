@@ -90,11 +90,11 @@
 #' @importFrom grDevices colorRampPalette
 #' @keywords internal
 #' @author Daniel C. Ellwanger
-.prettyColorRamp <- function(n, grayStart=TRUE) {
+.prettyColorRamp <- function(n, grayStart=FALSE) {
   if(grayStart) {
     cols <- c("#F2F2F2FF", "#21908CFF", "#FDE725FF")
   } else {
-    cols <- c("#440154FF", "#3B528BFF", "#21908CFF", "#5DC863FF", "#FDE725FF")
+    cols <- c("#440154FF", "#3B528BFF", "#F2F2F2FF", "#21908CFF", "#5DC863FF", "#FDE725FF")
   }
   colorRampPalette(cols)(n)
 }
