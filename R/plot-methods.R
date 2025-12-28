@@ -177,7 +177,7 @@
                    shape=21) +
         scale_fill_manual(name=name, breaks=breaks, labels=breaks,
                             values= vals,
-                            drop=FALSE, na.value = alpha("gray40", 0.3))
+                            drop=FALSE, na.value = "#6666664D")
 
     } else {
       nas <- is.na(y)
