@@ -107,7 +107,7 @@
     colors <- "bw"
   }
   cRamp <- list("bw"=colorRampPalette(c("white", "black")),
-                "pretty"=.prettyColorRamp(grayStart = FALSE))[[colors[1]]]
+                "pretty"=.prettyColorRamp)[[colors[1]]]
 
   f.ggplayout <- function(gp, X, nas, name) {
     gp <- gp + aes(x = X[nas, 1], y = X[nas, 2]) +
@@ -169,9 +169,9 @@
       breaks <- rev(levels(equalSpace))
       df <- data.frame(X, equalSpace)
 
-      #vals = rev(cRamp(length(brks) - 1))
-      vals = rev(.prettyColorRamp(length(brks) - 1, grayStart = FALSE))
-      print(vals)
+      vals = rev(cRamp(length(brks) - 1))
+      # vals = rev(.prettyColorRamp(length(brks) - 1, grayStart = FALSE))
+      # print(vals)
 
       gp <- f.ggplayout(gp, X, nas, name) +
         geom_point(data=df,
