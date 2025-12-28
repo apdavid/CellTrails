@@ -107,7 +107,7 @@
     colors <- "bw"
   }
   cRamp <- list("bw"=colorRampPalette(c("white", "black")),
-                "pretty"=.prettyColorRamp)[[colors[1]]]
+                "pretty"=.prettyColorRamp(grayStart = FALSE))[[colors[1]]]
 
   f.ggplayout <- function(gp, X, nas, name) {
     gp <- gp + aes(x = X[nas, 1], y = X[nas, 2]) +
