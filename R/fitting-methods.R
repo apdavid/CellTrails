@@ -87,7 +87,7 @@
   surf <- surf$fit
   surf[surf < 0] <- 0
   surf[surf > max(fit$fitted.values)] <- max(fit$fitted.values)
-  fit$fitted.values[fit$fitted.values < 0] <- 0
+  # fit$fitted.values[fit$fitted.values < 0] <- 0
 
   result <- list()
   result$grid <- data.frame(x1 = .rescale(newd[,1], x1r[1], x1r[2]),
