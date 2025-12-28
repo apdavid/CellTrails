@@ -171,6 +171,7 @@
 
       #vals = rev(cRamp(length(brks) - 1))
       vals = rev(.prettyColorRamp(length(brks) - 1, grayStart = FALSE))
+      print(vals)
 
       gp <- f.ggplayout(gp, X, nas, name) +
         geom_point(data=df,
