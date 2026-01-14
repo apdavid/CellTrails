@@ -627,6 +627,6 @@
     lbl[lbl == 0] <- "nd"
     gp <- gp + scale_y_continuous(breaks=brks, labels=lbl)
   }
-  gp <- gp + labs(subtitle = paste0("Trail: ", trail_name))
+  gp <- gp + ggtitle(paste0("Trail: ", trail_name))
   gp
 }
