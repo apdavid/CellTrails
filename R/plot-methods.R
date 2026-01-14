@@ -602,7 +602,7 @@
 
     brks <- pretty(dat$Y)
     lbl <- brks
-    lbl[lbl == 0] <- "nd"
+    lbl[lbl == 0] <- "NND"
     gp <- gp + scale_y_continuous(breaks = brks, labels = lbl)
   } else { #show multiple features
     ys <- matrix(nrow = length(x[!is.na(x)]), ncol = length(feature_name))
