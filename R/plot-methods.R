@@ -597,7 +597,7 @@
     gp <- gp + geom_point(data = dat, aes_string(x="X", y="Y"))
     # gp <- gp + labs(colour = "State")
     gp <- gp + geom_line(data = fit.dat, aes_string(x="FX", y="FY"), lwd = .75)
-    gp <- gp + theme(axis.line = element_line(colour = "black"))
+    gp <- gp + theme(axis.line = element_line(colour = "blue"))
     gp <- gp + xlab('Pseudotime (%)') + ylab(feature_name)
 
     brks <- pretty(dat$Y)
