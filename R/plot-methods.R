@@ -594,7 +594,7 @@
     fit <- .fitDynamic_def(x = dat[,1], y = dat[,2], z = dat[,3], k = k)
     fit.dat <- data.frame(FX = fit$x / max(fit$x) * 100, FY = fit$y)
 
-    gp <- gp + geom_point(data = dat, aes_string(x="X", y="Y", color="STATES"))
+    gp <- gp + geom_point(data = dat, aes_string(x="X", y="Y"))
     # gp <- gp + labs(colour = "State")
     gp <- gp + geom_line(data = fit.dat, aes_string(x="FX", y="FY"), lwd = .75)
     gp <- gp + theme(axis.line = element_line(colour = "black"))
