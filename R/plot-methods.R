@@ -624,7 +624,7 @@
 
     brks <- pretty(dat$value)
     lbl <- brks
-    lbl[lbl == 0] <- "nd"
+    lbl[lbl == 0] <- "NND"
     gp <- gp + scale_y_continuous(breaks=brks, labels=lbl)
   }
   gp <- gp + ggtitle(paste0("Trail: ", trail_name))
